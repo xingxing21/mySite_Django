@@ -27,7 +27,9 @@ SECRET_KEY = 'un*a479f)%e$26(4xnxst#4k@&)qi-$r11ij2megp_evy8vu+@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+	'https://salty-wave-66613.herokuapp.com/',
+]
 
 
 # Application definition
