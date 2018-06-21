@@ -28,7 +28,7 @@ SECRET_KEY = 'un*a479f)%e$26(4xnxst#4k@&)qi-$r11ij2megp_evy8vu+@'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-	'salty-wave-66613.herokuapp.com',
+	'infinite-wildwood-32312.herokuapp.com',
 ]
 
 
