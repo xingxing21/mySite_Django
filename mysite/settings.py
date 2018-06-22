@@ -29,6 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
 	'infinite-wildwood-32312.herokuapp.com',
+    '127.0.0.1',
 ]
 
 

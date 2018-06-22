@@ -41,7 +41,9 @@ def saveData(request):
 
     wfdatas = Wfdata.objects.all()
     id_list = [d.getID() for d in wfdatas]
-    max_iid = max(id_list)
+    max_iid = -1
+    if len(id_list) > 0:
+        max_iid = max(id_list)
     w = Wfdata(iid=max_iid + 1, t_id=t.getID(), barcode=_bcode, quantity=_quantity)
     w.save()
     return HttpResponse('ok')
