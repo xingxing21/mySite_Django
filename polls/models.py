@@ -8,7 +8,7 @@ class Transaction(models.Model):
     description = models.CharField(max_length=500)
 
     def getJSON(self):
-        return "'id%s':{'ttype':'%s', 'icode':'%s', 'desc':'%s'}" % (self.iid, self.ttype, self.icode, self.description)
+        return '"id%s":{"ttype":"%s", "icode":"%s", "desc":"%s"}' % (self.iid, self.ttype, self.icode, self.description)
 
     def getID(self):
         return self.iid;
@@ -23,4 +23,4 @@ class Wfdata(models.Model):
         return self.iid
 
     def getJSON(self):
-        return "{'iid':'%s', 't_id':'%s', 'barcode':'%s', 'quantity':'%s'}" % (self.iid, self.t_id, self.barcode, self.quantity)
+        return '{"iid":"%s", "t_id":"%s", "barcode":"%s", "quantity":"%s"}' % (self.iid, self.t_id, self.barcode, self.quantity)
